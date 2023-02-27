@@ -1,8 +1,60 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
-body{
-    font-family: "iranyekanwebregular",Arial, Helvetica, sans-serif;
+body {
+   font-family: "iranyekanwebregular", Arial, Helvetica, sans-serif;
+   /* background-color: red; */
+}
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 1170px;
+   margin: auto;
+   padding: 21px 0 7px;
+   background-color: rgba(255, 255, 255, 0.72);
+   backdrop-filter: blur(20px);
+   -webkit-backdrop-filter: blur(20px);
+   position: sticky;
+   top: 0;
+   transition: all 0.3s ease;
+}
+.logo {
+   margin: 11px 28px;
+}
+
+.header-ul {
+   display: flex;
+   list-style: none;
+}
+.header-ul li {
+   font-size: 14px;
+   margin: 0 15px;
+}
+.header-ul li a {
+   cursor: pointer;
+   text-decoration: none;
+   color: #303030;
+}
+.header-ul > li:last-child a {
+    color: #28457b;
+    background-color: rgba(232, 239, 254, 0.6);
+    border-radius: 20px;
+    padding: 10px 27px;
+    margin-right: 20px;
+    font-family:"YekanBakhBold" ;
+}
+
+.header-ul > li:last-child a:hover{
+    background-color: #fbf6d9;
+}
+
+.more-menu{
+    display: flex;
+}
+.more-menu img{
+    width: 8px;
+    margin-right: 8px;
 }

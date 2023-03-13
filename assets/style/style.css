@@ -21,6 +21,7 @@ header {
    position: sticky;
    top: 0;
    transition: all 0.3s ease;
+   border-bottom: 1px solid #ececec6b;
 }
 .logo {
    margin: 11px 28px;
@@ -435,7 +436,43 @@ header {
    border-radius: 10px;
    margin-top: 20px;
 }
+.support{
+   width: 1110px;
+   height: 70px;
+   padding: 0 30px;
+   margin: 50px auto;
+   background-color: #fbf6f1;
+   border-radius: 35px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.support-number{
+   font-family: "YekanBakhHeavy";
+   font-size: 1.5rem;
+}
+#line{
+   margin: 0 15px;
+}
+#phone-number{
+   color: #21254e;
+}
 
+.support-request{
+   border-radius: 8px;
+   font-family: "YekanBakhBold";
+   font-size: 1.5rem;
+   padding: 8px 10px;
+}
+.support-request a{
+   display: flex;
+   text-decoration: none;
+   color: #21254e;
+}
+.support-request img {
+   width: 20px;
+   margin-right: 10px;
+}
 @keyframes fadeInDown {
    0% {
       opacity: 0;
@@ -453,6 +490,7 @@ header {
    100% {
       opacity: 1;
    }
+
 }
 
 @media (max-width: 1200px) {
@@ -495,6 +533,10 @@ header {
       padding: 18xp 0 20px 50px;
    }
    .start-box{
+      width: auto;
+      margin: 10px 50px;
+   }
+   .support{
       width: auto;
       margin: 10px 50px;
    }
@@ -544,6 +586,9 @@ header {
       width: auto;
       padding: 0 35px;
    }
+   .support-number , .support-request{
+      font-size: 1.1rem;
+   }
 }
 
 @media (max-width: 768px) {
@@ -579,6 +624,11 @@ header {
    }
    .items .item {
       padding: 18px 0 20px 20px;
+   }
+   .support{
+      flex-direction: column;
+      height: auto;
+      padding: 20px 20px;
    }
 }
 @media (max-width: 575px) {
@@ -619,5 +669,14 @@ header {
    }
    .start-box p{
       font-size: 1rem;
+   }
+   .support-number p{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+   }
+   #line{
+      visibility: hidden;
    }
 }

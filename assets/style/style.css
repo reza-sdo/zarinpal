@@ -401,30 +401,30 @@ header {
    border-right: 1px solid #e0e4e7;
    border-top: 1px solid #e0e4e7;
 }
-.start-box{
+.start-box {
    width: 1170px;
    height: 220px;
    margin: auto;
    margin-top: 50px;
    border: 1px solid silver;
-   border-radius:20px ;
+   border-radius: 20px;
    display: flex;
-   flex-direction:column ;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
 }
 
-.start-box h4{
+.start-box h4 {
    font-family: "YekanBakhHeavy";
    font-size: 1.7rem;
 }
-.start-box p{
-   font-family:"YekanBakhMedium";
+.start-box p {
+   font-family: "YekanBakhMedium";
    font-size: 1.4rem;
    color: #747480;
    margin-top: 10px;
 }
-.start-box a{
+.start-box a {
    text-decoration: none;
    font-size: "YekanBakhMedium";
    font-family: 0.9rem;
@@ -436,7 +436,7 @@ header {
    border-radius: 10px;
    margin-top: 20px;
 }
-.support{
+.support {
    width: 1110px;
    height: 70px;
    padding: 0 30px;
@@ -447,24 +447,24 @@ header {
    justify-content: space-between;
    align-items: center;
 }
-.support-number{
+.support-number {
    font-family: "YekanBakhHeavy";
    font-size: 1.5rem;
 }
-#line{
+#line {
    margin: 0 15px;
 }
-#phone-number{
+#phone-number {
    color: #21254e;
 }
 
-.support-request{
+.support-request {
    border-radius: 8px;
    font-family: "YekanBakhBold";
    font-size: 1.5rem;
    padding: 8px 10px;
 }
-.support-request a{
+.support-request a {
    display: flex;
    text-decoration: none;
    color: #21254e;
@@ -473,6 +473,76 @@ header {
    width: 20px;
    margin-right: 10px;
 }
+
+footer {
+   display: flex;
+   justify-content: space-between;
+   width: 1170px;
+   margin: auto;
+}
+.footer-links {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   width: calc(100% - 330px);
+   margin-bottom: 50px;
+   padding: 0 10px;
+}
+.social-media {
+   width: 330px;
+   padding: 0 30px;
+   margin-bottom: 100px;
+}
+.social-media p {
+   font-family: "YekanBakhHeavy";
+   font-size: 1.3rem;
+   color: #303030;
+}
+.social-media div {
+   display: flex;
+   margin-top: 20px;
+}
+.social-media div a {
+   background-color: #eff4fe;
+   width: 45px;
+   height: 45px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   margin-left: 15px;
+}
+.footer-links p {
+   font-size: 1.3rem;
+   font-family: "YekanBakhHeavy";
+   margin-bottom: 15px;
+   color: #303030;
+}
+.footer-links ul {
+   list-style: none;
+}
+.footer-links a {
+   text-decoration: none;
+   font-size: 1rem;
+   font-family: "iranyekanwebmedium";
+   color: #000;
+}
+.footer-links li {
+   padding: 8px 0;
+}
+.bell{
+   background-color: #2e82ff;
+   width: fit-content;
+   padding: 7px 7px 0;
+   border-radius: 50%;
+   position: fixed;
+   bottom: 20px;
+   left: 20px;
+   cursor: pointer;
+}
+.bell img{
+   width: 40px;
+}
+
 @keyframes fadeInDown {
    0% {
       opacity: 0;
@@ -490,7 +560,6 @@ header {
    100% {
       opacity: 1;
    }
-
 }
 
 @media (max-width: 1200px) {
@@ -532,13 +601,16 @@ header {
    .items .item {
       padding: 18xp 0 20px 50px;
    }
-   .start-box{
+   .start-box {
       width: auto;
       margin: 10px 50px;
    }
-   .support{
+   .support {
       width: auto;
       margin: 10px 50px;
+   }
+   footer{
+      width: 940px;
    }
 }
 @media (max-width: 990px) {
@@ -586,8 +658,19 @@ header {
       width: auto;
       padding: 0 35px;
    }
-   .support-number , .support-request{
+   .support-number,
+   .support-request {
       font-size: 1.1rem;
+   }
+   footer{
+      flex-direction: column;
+      width: calc(100% - 60px);
+   }
+   .footer-links{
+      width: 100%;
+   }
+   .social-media{
+      margin: auto;
    }
 }
 
@@ -625,10 +708,21 @@ header {
    .items .item {
       padding: 18px 0 20px 20px;
    }
-   .support{
+   .support {
       flex-direction: column;
       height: auto;
       padding: 20px 20px;
+   }
+   footer{
+      width: calc(100% - 120px);
+      margin: 0 60px;
+   }
+   .footer-links{
+      grid-template-columns: repeat(2,1fr);
+      column-gap: 60px;
+   }
+   .footer-links div{
+      margin-top: 25px;
    }
 }
 @media (max-width: 575px) {
@@ -661,22 +755,22 @@ header {
    .items .item {
       padding: 18px 0;
    }
-   .start-box{
+   .start-box {
       margin: 0 20px;
    }
-   .start-box h4{
+   .start-box h4 {
       font-size: 1.2rem;
    }
-   .start-box p{
+   .start-box p {
       font-size: 1rem;
    }
-   .support-number p{
+   .support-number p {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 20px;
    }
-   #line{
+   #line {
       visibility: hidden;
    }
 }
